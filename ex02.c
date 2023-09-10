@@ -1,24 +1,19 @@
 #include <stdio.h>
-#define texto "Entrada e saida de dados"
 
 int main(){
-	printf("%s\n", texto);
 	
-	int idade = 0;
-	float altura = 0.0;
-	char nome [50] = "";
+	int n1, n2;
 	
-	printf ("Digite a idade:\n");
-	scanf ("%d", &idade);
+	printf ("Digite o primeiro numero: \n");
+	scanf ("%d", &n1);
+	printf ("Digite o segundo numero: \n");
+	scanf ("%d", &n2);
 	
-	printf ("Digite a altura: \n");
-	scanf ("%f", &altura);
+	if (n1 > n2){
+		printf ("O %d que digitou e o maior numero.", n1);
+	}	else {
+		printf ("O %d que digitou e o maior numero", n2);
+	}
 	
-	printf ("Digite seu nome:\n");
-	scanf ("%s", nome);
 	
-	printf("Dados INFORMADOS:\n");
-	printf ("Sua idade e:%d \n",idade);
-	printf ("Sua altura e %.2f \n", altura);
-	printf ("Seu nome e: %s", nome);
 }

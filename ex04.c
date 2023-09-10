@@ -1,23 +1,18 @@
 #include <stdio.h>
 
-int main (){
+int main(){
 	
-	float  n1, n2, media;
+	char vogal;
 	
-	printf ("Digite o valor da primeira nota:\n");
-	scanf ("%f", &n1);
+	printf ("Digite uma letra para ver se ela e VOGAL ou CONSOANTE: ");
+	scanf ("%c", &vogal);
 	
-	printf ("Digite o valor da segunda nota: \n");
-	scanf ("%f", &n2);
-	media = (n1 + n2) / 2;
+	if (vogal == 'a' || vogal == 'e' || vogal == 'i' || vogal == 'o' || vogal == 'u' ||
+	    vogal == 'A' || vogal == 'E' || vogal == 'I' || vogal == 'O' || vogal == 'U'){
+    	printf ("A letra escolhida %c e uma VOGAL", vogal);
+		} else {
+			printf ("A letra escolhida e uma CONSOANTE");
+		}
 	
-	if (media >= 6){
-
-	printf ("Aprovado");
-	
-	}else {
-	
-	printf ("Reprovado");
-}
-return 0;
+	return 0;
 }

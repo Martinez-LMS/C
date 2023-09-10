@@ -1,11 +1,20 @@
-int main (){
-	int idade = 0;
-	int ano = 1999;
-	printf("\nValor inical de idade: %d. \n", idade);
-	
-	printf("Digite uma idade e um ano:\n");
-	scanf ("%d %d", &idade, &ano);
-	
-	printf ("Idade informada e: %d\n", idade);
-	printf ("ano informada e: %d", ano);
+#include <stdio.h>
+
+int main() {
+    int n;
+    int par;
+
+    printf("Digite um numero para saber se ele e PAR ou IMPAR: ");
+    scanf("%d", &n);
+
+    par = (n % 2); // Use o operador % para verificar se é par
+
+    if (par == 0) {
+        printf("Seu numero e PAR!\n");
+    } else {
+        printf("Seu numero e IMPAR\n");
+    }
+
+    return 0;
 }
+
